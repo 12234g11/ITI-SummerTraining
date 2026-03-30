@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Form</title>
+  <style>
+    body {
+      background-color: azure;
+    }
+    h4 {
+      margin: 0;
+    }
+    .container {
+      width: 400px;
+      margin: 0 auto;
+    }
+    input {
+      width: 100%;
+    }
+    .un, .up {
+      margin: 16px 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="Main.html" method="get">
+      <fieldset>
+        <legend><b>Login</b></legend>
+
+        <div class="un">
+          <h4><label for="un">User name:</label></h4>
+          <input type="text" id="un" name="username" placeholder="Enter user name" accesskey="u"/>
+        </div>
+
+        <div class="up">
+          <h4><label for="up">User password:</label></h4>
+          <input type="password" id="up" name="password" placeholder="Enter user password" accesskey="p"/>
+        </div>
+
+        <input type="checkbox" id="cb" name="remember" value="yes" style="width: fit-content" accesskey="r"/>
+        <label for="cb"><b>Remember me</b></label>
+        <br />
+
+        <div style="text-align: center;">
+          <button type="submit" accesskey="s">Sign In..</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>

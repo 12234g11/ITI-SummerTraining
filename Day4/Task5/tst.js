@@ -1,0 +1,10 @@
+let radius = parseFloat(prompt("Enter the radius of a circle:"));
+let area = Math.PI * Math.pow(radius, 2);
+alert("The area of the circle is: " + area.toFixed(2));
+let value = parseFloat(prompt("Enter a number to calculate its square root:"));
+let sqrt = Math.sqrt(value);
+alert("The square root of " + value + " is: " + sqrt.toFixed(2));
+let angleDegrees = parseFloat(prompt("Enter an angle (in degrees) to calculate its cosine:"));
+let angleRadians = angleDegrees * (Math.PI / 180);
+let cosValue = Math.cos(angleRadians);
+alert("Cos(" + angleDegrees + ") = " + cosValue.toFixed(4));

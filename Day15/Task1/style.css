@@ -1,0 +1,21 @@
+form {
+  max-width: 400px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px 20px;
+
+}
+
+input:invalid {
+  border: 2px solid red;
+  background-color: #fff0f0;
+}
+
+input:valid {
+  border: 2px solid green;
+  background-color: #f0fff0;
+}
+
+input:required:invalid {
+  outline: none;
+}

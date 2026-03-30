@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form</title>
+  <style>
+    body {
+      background-color: #5d5d5d8c;
+    }
+    table, tr, td, th {
+      border: 2px solid #363636b5;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+    form, h1 {
+      width: fit-content;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <h1><u>Registration Form</u></h1>
+  <form action="Main.html" method="get">
+    <table>
+      <tr>
+        <td><label for="fname">First Name</label></td>
+        <td><input type="text" id="fname" name="fname" placeholder="Enter Your First Name" accesskey="f"></td>
+      </tr>
+      <tr>
+        <td><label for="lname">Last Name</label></td>
+        <td><input type="text" id="lname" name="lname" placeholder="Enter Your Last Name" accesskey="l"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email</label></td>
+        <td><input type="text" id="email" name="email" placeholder="Enter Your Email" accesskey="e"></td>
+      </tr>
+      <tr>
+        <td><label for="pass">Password</label></td>
+        <td><input type="password" id="pass" name="password" placeholder="Enter Your Password" accesskey="p"></td>
+      </tr>
+      <tr>
+        <td rowspan="2"><label>Gender</label></td>
+        <td>
+          <input type="radio" id="Female" name="gender" value="female" accesskey="g">
+          <label for="Female">Female</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="country">Country</label></td>
+        <td>
+          <select id="country" name="country" accesskey="c">
+            <option value="" disabled selected>Select a Country..</option>
+            <option value="Egypt">Egypt</option>
+            <option value="England">England</option>
+            <option value="Sudan">Sudan</option>
+            <option value="Spain">Spain</option>
+            <option value="China">China</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="Birthday">Birthday</label></td>
+        <td><input type="date" id="Birthday" name="birthday" accesskey="b"></td>
+      </tr>
+      <tr>
+        <th colspan="2"><u>Interests</u></th>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="checkbox" id="ch1" name="interest" value="sports" accesskey="1"><label for="ch1">Sports</label>
+          <input type="checkbox" id="ch2" name="interest" value="music" accesskey="2"><label for="ch2">Music</label>
+          <input type="checkbox" id="ch3" name="interest" value="fashion" accesskey="3"><label for="ch3">Fashion</label>
+          <br><br>
+          <input type="checkbox" id="ch4" name="interest" value="reading" accesskey="4"><label for="ch4">Reading</label>
+          <input type="checkbox" id="ch5" name="interest" value="shopping" accesskey="5"><label for="ch5">Shopping</label>
+          <input type="checkbox" id="ch6" name="interest" value="movies" accesskey="6"><label for="ch6">Movies</label>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2"><label for="msg"><u>Bio</u></label></th>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <textarea id="msg" name="bio" rows="5" cols="35" placeholder="Write your message here..." accesskey="m"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center;">
+          <button type="submit" accesskey="r">Register</button>
+          <button type="reset" accesskey="x">Clear</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
