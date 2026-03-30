@@ -7,6 +7,7 @@ export default function Movies() {
     { name: "Movie 3", id: 3 },
     { name: "Movie 4", id: 4 },
   ]);
+  console.log(data);
   return (
     <>
       Movies
